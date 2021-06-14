@@ -1,0 +1,28 @@
+baseURL = "blog.slavin.ee"
+languageCode = "en-us"
+title = "Anton's Blog"
+
+theme = "hugo-tanka"
+canonifyurls = true
+enableEmoji = true
+
+[params]
+  sitename = "Anton's Blog"
+  faviconfile = "images/favicon.png"
+  highlightjs = true
+  highlightjslanguages = ["python", "javascript", "java"]
+  uselatex = true
+  progressively = false
+
+[[menu.primary]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.primary]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.primary]]
+    name = "GitHub"
+    url = "https://github.com/tonysln"
+    weight = 3
