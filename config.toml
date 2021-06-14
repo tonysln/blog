@@ -1,4 +1,4 @@
-baseURL = "blog.slavin.ee"
+baseURL = "https://blog.slavin.ee/"
 languageCode = "en-us"
 title = "Anton's Blog"
 
@@ -20,7 +20,7 @@ enableEmoji = true
     weight = 1
 [[menu.primary]]
     name = "About"
-    url = "/about/"
+    url = "about/"
     weight = 2
 [[menu.primary]]
     name = "GitHub"
