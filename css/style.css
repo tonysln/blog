@@ -17,10 +17,32 @@ body {
   height: 100%;
 }
 
-main, header {
+em {
+  opacity: 0.7;
+}
+
+main, header, footer {
   max-width: 890px;
   margin: 0 auto;
   padding: 0.4em 0.8em;
+}
+
+footer {
+  margin-top: 1em;
+  opacity: 0.7;
+  padding: 1em 0.8em;
+}
+
+footer hr {
+  margin-bottom: 0.6em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 header h1 {
@@ -34,7 +56,7 @@ a {
   color: inherit;
 }
 
-header hr {
+hr {
   opacity: 0.4;
 }
 
