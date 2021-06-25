@@ -20,7 +20,7 @@ body {
 main, header {
   max-width: 890px;
   margin: 0 auto;
-  padding: 0.4em 0;
+  padding: 0.4em 0.8em;
 }
 
 header h1 {
@@ -39,7 +39,7 @@ header hr {
 }
 
 main {
-  padding: 1em 0;
+  padding: 1em 0.8em;
 }
 
 main section {
@@ -80,4 +80,8 @@ th, td {
 
 td {
   text-align: center;
+}
+
+.table-container {
+  overflow-x: auto;
 }
