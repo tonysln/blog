@@ -16,6 +16,10 @@ body {
   font-size: 1.6rem;
   min-height: 100%;
   height: 100%;
+  background-color: rgb(215, 228, 250, 0.4);
+  background-image: url('../img/shading28.jpeg');
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 em {
@@ -23,22 +27,25 @@ em {
 }
 
 main, header, footer {
-  max-width: 890px;
+  max-width: 910px;
   margin: 0 auto;
-  padding: 0.4em 0.8em;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+header {
+  padding: 0.4em 1.3em;
 }
 
 footer {
-  margin-top: 1em;
-  opacity: 0.7;
-  padding: 1em 0.8em;
+  padding: 1.4em 1.3em 1em 1.3em;
 }
 
 footer hr {
   margin-bottom: 0.6em;
 }
 
-footer a {
+footer a, footer span {
+  opacity: 0.7;
   text-decoration: none;
 }
 
@@ -62,7 +69,7 @@ hr {
 }
 
 main {
-  padding: 1em 0.8em;
+  padding: 1em 1.3em;
 }
 
 main section {
@@ -94,12 +101,17 @@ caption {
 
 table {
   border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
+  border: 1px solid rgb(200,200,200);
+  width: 100%;
 }
 
 th, td {
   border: 1px solid rgb(190,190,190);
   padding: 0.4em 0.6em;
+}
+
+table.compact th, table.compact td {
+  padding: 0.3em 0.4em;
 }
 
 td {
@@ -114,4 +126,8 @@ td {
   max-width: 100%;
   width: 100%;
   margin: 1em 0;
+}
+
+td img.cover {
+  width: 86px;
 }
