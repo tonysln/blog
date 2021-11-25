@@ -95,6 +95,10 @@ article ul {
   margin-bottom: 1.4em;
 }
 
+sup {
+  color: rgb(51, 70, 113);
+}
+
 caption {
   padding: 0.6em;
 }
