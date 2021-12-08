@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anton Slavin">
+    <title>Neural Adaptation and Perception of Music - Anton Slavin</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Anton Slavin</h1>
+        <hr>
+    </header>
+    <main>
+        <a href="../../">« Home</a>
+
+        <br><br><br>
+
+        <article>
+            <h1>[WIP] Neural Adaptation and Perception of Music</h1>
+            <em>2022-01-XX</em>
+
+            <br><br>
+            <em>This is continuation of a previous <a href="../altered-perception-of-music-after-listening-during-sleep/">topic on this blog</a>.</em>
+
+
+
+            <h3>Introduction</h3>
+            <p>Have you ever listened to a piece of music on repeat, for days on end?</p>
+            <p>But have you ever tried doing this while sleeping, throughout the whole night?</p>
+            <p>Once upon a time, I did exactly this: fall asleep to a song playing on repeat in headphones, all throughout the night. The next morning, however, I was shocked to find out that the same song I just listened to did not sound the same anymore. It was clearly the same song, but now it sounded distorted in very unusual ways. It's as if the band decided to switch instruments, hire a new producer and re-record the same song with different sounds.</p>
+            <p>However, throughout the day, my previous perception of the song slowly returned. In other cases, the previous perception would return on the second day.</p>
+
+            <p>Thankfully, I am not the only one who has experienced this phenomenon. After some Google searches, I could find very similiar accounts from different discussion forums:</p>
+
+            <p><em>"I've found on many occasions that if I listen to a specific song on repeat whilst I sleep, it sounds
+                very different when I play it again the next day. I usually have to check that it actually is the
+                same version of the song. I can't pinpoint what specifically sounds different. It just sounds like a
+                cover of the song. It's hard to describe."</em></p>
+            <p><em>"I'm a fan of Lady Gaga's song Aura, and recently slept while having the song play on loop. I played
+                    the track again a few hours after waking up, and I could not recognize anything in the song except
+                    for the lyrics, it's like all of the layers and the production were jumbled up to create an entirely
+                    different sound. I was wondering if anyone here had similar experiences with this "phenomena"?"</em>
+            </p>
+            <p><em>"The tone and the instruments seem really off, it almost sounds like someone tried doing a cover of
+                    the song, a really bad one."</em></p>
+            
+            <p>Sadly, besides a couple of forum posts, not much is to be found using Google. There are no easily accessible resources on this topic at all, even after thorough searching.</p>
+            <p>And this brings us to the topic of this project - explore this phenomenon in-depth and try to find the mechanisms behind it. The first part of the project is devoted to research and the design of an experiment. In the second part, I conduct a small-scale pilot study and process the outcome.</p>
+
+
+
+
+            <h3>Background</h3>
+            <p>With the help of Dr. Jaan Aru, my supervisor for this project, I discovered relevant topics which could be the cause for the phenomenon in question. Namely, neural adaptation (and aftereffects), auditory saliency, rhythm & pitch perception and auditory remapping.</p>
+            <p>For example, Li, Wang and Chen (2021) found that <em>"after adaptation to a decelerating rhythm, participants tended to perceive the subsequent isochronous rhythm as accelerating"</em><sup>1</sup>. This is a type of short-term neural adaptation. Similarly, Walker and Irion (1979) have found the following in their study: </p>
+            <p><em>"If a low-pitched tone of long duration alternates with a high-pitched short tone during an inspection period of a few minutes, then a high test tone of intermediate length sounds longer than a low test tone of equal length. [...] A second contingent aftereffect occurs if pairs of tones of the same pitch, the first short and the second long, are presented repeatedly during an inspection period. If a pair of test tones of equal and intermediate length is then presented, the first tone sounds longer than the second"</em><sup>2</sup>.</p>
+            <p>This is, once again, an example of short-term neural adaptation to repeating stimuli. However, the phenomenon we're interested in appears to be quite a bit more long-term, appearing throughout the whole night, for multiple hours instead of minutes. One would think that the mechanisms of adaptation might be different in our case.</p>
+            <p>Figure 1 shows us the setup for experiments made by Li et al (2021). After listening to a rhythm in the "Initial adaptation" phase, neural adaptation would happen. In the "Top-up/test trials" phase, both the initial rhythm and a neutral rhythm (with equal intervals) would be played in succession, and the participants tasked to specify which kind of rhythm do they hear during the neutral parts.</p>
+
+            <div class="post-img-container" style="text-align: center;">
+                <img src="img/fig1.png" alt="Figure 1. A schematic of accelerating and decelerating rhythms used by Li et al" loading="lazy">
+                <caption>Figure 1. A schematic of accelerating and decelerating rhythms used by Li et al<sup>1</sup>.</caption>
+            </div>
+            <br>
+            
+            <p>Besides neural adaptation, I explored the mechanisms of sound perception. I discovered that during REM sleep (but not NREM), the auditory cortex continues to process some low-level acoustic sounds. According to Sifuentes-Ortega et al (2021), the reaction to musical rhythm lessened greatly during REM sleep, yet some activity still persisted<sup>3</sup>. This can explain why neural adaptation can happen at all during sleep. And, this also means that music <em>is</em> indeed processed differently during sleep, which could be related to this very unusual effect.</p>
+
+            <p>For all sounds we hear, the auditory cortex generates "feature maps", which directly shape our perception of sound. These feature maps contain additional information on the newly processed sounds to direct our attention to very specific sounds<sup>4</sup>. Figure 2 contains a diagram of the processes involved when generating feature maps and choosing attention cues, proposed by Delmotte VD. (2012)<sup>4</sup>.</p>
+
+            <div class="post-img-container" style="text-align: center;">
+                <img src="img/fig2.png" alt="Figure 2. A diagram showcasing the generation of feature and saliency maps" loading="lazy">
+                <caption>Figure 2. A diagram showcasing the generation of feature and saliency maps<sup>4</sup>.</caption>
+            </div>
+            <br>
+
+            <p>One would guess that songs already familiar to us result in very similar feature maps being generated on each listen. Perhaps when sleeping, the adaptation effect introduces changed to the generation of feature maps. As a result, we immediately pay attention to the new, different aspects of the song and find it peculiar. This would also explain why the new perception of the song persists for some time after the change.</p>
+
+            <p>Despite these findings and much more searching, I could not find any literature that would describe the phenomenon in question. The most appropriate studies I could find mention rhythm and pitch of sounds instead of timbre. Also, I could not find relevant studies for adaptation to more complex music during REM or NREM sleep, instead of simpler rhythms and isolated sounds.</p>
+
+
+            <h3>Experiment Design</h3>
+            <p>Because I could not find any suitable studies, I resorted to designing my own experiment for the phenomenon. Due to the highly subjective nature of the effect, it is unclear how to capture the entire effect objectively. So, we should start with some minor aspects of the effect.</p>
+            <p>One way of introducing distortions to sound without directly changing the pitch or adding additional sounds is by changing the frequency spectrum. Different instruments and sounds in a song occupy different parts of the frequency spectrum. By introducing slight changes to some frequency bands, we can get different minor changes in the overall sound. For example, by <strong>cutting</strong> the 80-300 Hz band, we can reduce the prominence of bass instruments. Or, by <strong>boosting</strong> the 500-900 Hz area, we can increase the prominence of vocals or piano. Of course, these changes introduce overall distortions to the song which are not present in the original phenomenon.</p>
+            <p>The idea of changing the frequency spectrum is used in the experiment, described in-depth below. The experiment consists of four parts: Preparation, Test 1, Sleep and Test 2.</p>
+
+            <br>
+            <p><strong>Preparation</strong></p>
+            <p>A suitable song is chosen for the experiment. The song must be "catchy" enough to allow for repeated listening throughout the whole night without becoming tiring or annoying.</p>
+            <p>Then, the chosen song is processed for the testing parts of the experiment. This is done manually. The goal is to create a short (&lt; 60 seconds) snippet of the song that would capture multiple parts of the original. The created snippet is then processed multiple times using an audio editor. As a result, multiple versions of the snippet are generated, each containing a slight distortion from the following list:</p>
+            <p>
+                <ul>
+                    <li>40-160 Hz Boost</li>
+                    <li>40-160 Hz Cut</li>
+                    <li>300-1200 Hz Boost</li>
+                    <li>300-1200 Hz Cut</li>
+                    <li>1400-4000 Hz Boost</li>
+                    <li>1400-4000 Hz Cut</li>
+                    <li>5000-9000 Hz Boost</li>
+                    <li>5000-9000 Hz Cut</li>
+                    <li>Speed-up 5%</li>
+                    <li>Slow-down 5%</li>
+                </ul>
+            </p>
+            <p>All of the generated snippets are then saved under a web page, which will be used for the testing parts of the experiment. Figure 3 contains an EQ filter plugin with a slight 300-1200 Hz boost applied to the audio. Using a stronger boost would result in the distortion being too harsh and immediately noticeable.</p>
+
+            <div class="post-img-container" style="text-align: center;">
+                <img src="img/fig3.png" alt="Figure 3. Slight frequency boost in the 300-1200 Hz band." loading="lazy">
+                <caption>Figure 3. Slight frequency boost in the 300-1200 Hz band<sup>5</sup>.</caption>
+            </div>
+            <br>
+            
+            <p><strong>Test 1</strong></p>
+            <p>When a suitable day is chosen, the participant is asked to listen to the chosen song throughout the day, paying attention to different parts of the composition. </p>
+            <p>After listening to the song throughout the day, the participant is asked to complete an online test. The test consists of four to five multiple-choice questions. For each question, multiple (3-4) of the previously generated snippets are placed in a random order. For most of the questions, an original snippet (without any distortions) is randomly included as well. The participant must listen to the snippets and decide, which one is closest to their current perception of the song. Additionally, the participant must give a confidence score of their choice, on a range from "Not confident at all" to "Very confident".</p>
+            <p>It would be expected that participants mostly select the original snippets with high confidence scores. If any distorted snippets are selected, a lower confidence score would be expected then.</p>
+
+            <br>
+            <p><strong>Sleep</strong></p>
+            <p>After completing the first test, the participant is asked to go to sleep for the night, with the chosen song playing repeatedly in a pair of headphones. It's important for the headphones to be comfortable enough to allow for sleep, as well as the volume of the song.</p>
+            <p>The "Apple Earpods", included with new iPhone devices, seems to be a safe choice, as the headphones are very light and do not sit deep in the ear canals.</p>
+
+            <br>
+            <p><strong>Test 2</strong></p>
+            <p>After sleeping through the night, the participant is asked to listen to the song again, at least once. Then, the same test from the evening before is completed again. Now, the participant is also asked to rate their change of perception of the song on a range from "No change in perception" to "The song in hardly recognizable". The participant can also leave any additional subjective comments.</p>
+
+            <br>
+            <p>If the design of the experiment is successful in capturing the effect, we could expect to see more distorted snippets being chosen with higher confidence values. For the original snippets, lower confidence values would be expected.</p>
+            <p>...</p>
+
+            <h3>Pilot Study</h3>
+            <p>...</p>
+
+            <h3>Results</h3>
+            <p>...</p>
+
+            <h3>Conclusions</h3>
+            <p>...</p>
+
+
+        </article>
+
+        <br><br>
+        <small><sup>1</sup> Li B, Wang K, Chen L. The rhythm aftereffect induced by adaptation to the decelerating rhythm. Psychon Bull Rev [Internet]. 2021 Oct 4
+        </small>
+        <br>
+        <small><sup>2</sup> Walker JT, Irion AL. Two new contingent aftereffects: Perceived auditory duration contingent on pitch and on temporal order. Perception & Psychophysics. 1979 May;26(3):241–4. 
+        </small>
+        <br>
+        <small><sup>3</sup> Sifuentes-Ortega R, Lenc T, Nozaradan S, Peigneux P. Partially Preserved Processing of Musical Rhythms in REM but Not in NREM Sleep. Cerebral Cortex. 2021 Sep 7.
+        </small>
+        <br>
+        <small><sup>4</sup> Delmotte VD. Computational auditory saliency. 2012 Nov 7 [cited 2021 Nov 20].
+        </small>
+        <br>
+        <small><sup>5</sup> GarageBand software, built-in EQ filter plugin.</small>
+
+        <br><br><br>
+
+        <a href="../../">« Home</a>
+
+        <br>
+    </main>
+    <footer>
+        <hr>
+        <small>
+            <a href="https://slavin.ee">Homepage</a>
+            <br>
+            <span>Anton Slavin</span>
+        </small>
+    </footer>
+</body>
+
+</html>
