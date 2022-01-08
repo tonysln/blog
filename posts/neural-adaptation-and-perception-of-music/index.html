@@ -138,7 +138,9 @@
             <br>
             <h3>Pilot Study</h3>
             <p>In order to test the effectiveness of the experiment, multiple pilot experiments were carried out. Unfortunately, few participants were willing to take part in the study. One participant completed the first test, but failed to fall asleep afterwards. So, I resorted to completing the experiment multiple times myself.</p>
-            <p>It should be noted that sedatives (quetiapine, mostly) were used for the experiments in order to fall asleep with the songs playing in moderate volume levels, for better results. The sedatives can theoretically influence the effect of neural adaptation, but more experiments without the use of sedatives are required to measure the changes.</p>
+            <p>It should be noted that in some cases, sedatives (quetiapine, mostly) were used for the experiments in order to fall asleep with the songs playing in moderate volume levels, for better results. The sedatives can theoretically influence the effect of neural adaptation, but more experiments without the use of sedatives are required to measure the changes.</p>
+            <p>Finally, it should be noted that no automation for creating the distortions was implemented. This would require much more time and deeper knowledge of audio processing to do in code. Instead, a GarageBand (DAW application) template was created with all distortions in separate tracks. The chosen song is first split into parts, then imported into the template. Then, a separate sample is exported for each track. Finally, the samples are moved to a custom test web page for the experiment (created by me for this project). In total, this process takes around 40 to 50 minutes for each experiment.
+            </p>
 
             <p><strong>Experiment 1</strong></p>
             <p>The first experiment was carried out with the goal of learning to create the testing pages and distorted snippets. The participant was me (M, 21). The results showed that the created distortions were too severe and noticeable during both tests. Thus, the tests failed to accurately capture any differences in perception. Yet, a subjective opinion was noted (a change from 0 - "Not applicable/no change" to 2 - "Maybe sounds a little different"). Additionally, the following comment was given in the second test: <em>Bass guitar more clear. Strings more pronounced, "in your face".</em></p>
@@ -147,7 +149,7 @@
             <br>
             <p><strong>Experiment 2</strong></p>
             <p>In the second experiment the participant was female, aged 21. Sadly, she could not fall asleep with the repeated song, so only the first test was completed. The test showed multiple weaknesses in the created distortions, as it was hard to distignuish between them and select the original samples.</p>
-            <p>In the test, only 2 original samples were selected. 4 of the samples were selected as EQ cuts and 2 samples as EQ boosts. The confides scores were selected as follows: "1" once, "2" 5 times, "3" 2 times. Thus, the participant could not confidently identify her perception of the song before the test, and told me separately that she experienced much confusion when selecting the samples.</p>
+            <p>In the test, only 2 original samples were selected. 4 of the samples were selected as EQ cuts and 2 samples as EQ boosts. The confidence scores were selected as follows: "1" once, "2" 5 times, "3" 2 times. Thus, the participant could not confidently identify her perception of the song before the test, and told me separately that she experienced much confusion when selecting the samples.</p>
             <p>The second experiment showed that the distortions should be a little more severe (5-6 dB instead of 3-4 dB), and that less samples should be used.</p>
             <p><a href="https://neuro-study.netlify.app/laura_mvula_overcome/">Link to test page for this experiment</a></p>
 
@@ -160,21 +162,19 @@
 
             <br>
             <p><strong>Experiment 4</strong></p>
-            <p>Experiment #4 - ... </p>
-            <p>...</p>
+            <p>TBA</p>
 
             <br>
             <p><strong>Experiment 5</strong></p>
-            <p>Experiment #5 - ... </p>
-            <p>...</p>
+            <p>TBA</p>
 
 
             <br>
             <h3>Results</h3>
             <p>The conducted pilot experiments allowed for changes and tweaks being made to the experiment design. The experiments showed initial weaknesses in the choice of distortions. The number of samples was also decreased to make the tests shorter and not as exhausting to complete, sacrificing the amount of data collected.</p>
-            <p>Experiments 3, ..., and ... showed that a perception of the chosen song does indeed change, as marked with the subjective score and comments, as well the choice of selected samples shifting from all "original" (with mostly high confidence scores) to mostly distorted (with mostly medium to high confidence scores). Table 1 contains an overview of results from all experiments.</p>
+            <p>Experiments 3 showed that a perception of the chosen song does indeed change, as marked with the subjective score and comments, as well the choice of selected samples shifting from all "original" (with mostly high confidence scores) to mostly distorted (with mostly medium to high confidence scores). Figure 4 contains comparisons of the confidence scores for each samples in experiments 1 and 3. We can see that in the second tests, most of the confidence values are lowered, yet still remain mostly medium.</p>
 
-            <div class="table-container">
+            <!-- <div class="table-container">
                 <table>
                     <tr>
                         <th>Nr</th>
@@ -325,17 +325,23 @@
                     </tr>
                     <caption>Table 1. An overview of all pilot experiments. Change marked in bold.</caption>
                 </table>
+            </div> -->
+            <div class="post-img-container" style="text-align: center;">
+                <img src="img/fig4.png" alt="Figure 4. Change of confidence values in experiments 1 and 3." loading="lazy">
+                <caption>Figure 4. Change of confidence values in experiments 1 and 3.</caption>
             </div>
             <br>
 
-            <p>The created experiments are a first step in capturing this effect in more detail and more subjectively, yet they do not explain clearly the reasons behind the effect. ...</p>
-            <p>...</p>
+            <p>The experiments show that the method does indeed capture the effect in more detail than simple descriptions. Additionally, the severity of the effect can also be measured.</p>
+            <p>Experiments 4 and 5 are yet to be completed..</p>
 
             <br>
             <h3>Conclusions</h3>
-            <p>How did the experiments work? Did they show anything? What to improve? Any other ways of measuring this effect? Any other resources? How to continue?</p>
-            <p>Combine conclusions from research, pilot study and results ...</p>
-            <p>Future work ...</p>
+            <p>After studying background information on neural adaptation and occuring aftereffects, we can still expect neural adaption to be a possible cause for this effect. Previous research shows that listening to a repeating sound can and does cause aftereffects and distortions in our perception. Additionally, it has been shown that our auditory cortex processes and filters all incoming sounds, which can also possibly contribute to the effect, combined with the adaptation process.</p>
+            <p>During this project, a method for capturing the effect more objectively and in more detail was developed. The method does not definitely confirm that the effect is caused by neural adaptation, though. Still, the created method is a first step in capturing and exploring the effect objectively and in more detail. It is an improvement over giving descriptive comments.</p>
+            <p>The develop method can be improved further by trying more distortions and effects on samples. Also, it is worth experimenting with very different genres of music and even non-musical sounds. Additionally, it would be useful to develop an application for generating the distortions automatically to speed up the process.</p>
+            <p>One large problem with this project is in the small number of participants and experiments. This project covered only the creation of the method and some pilot experiments to see if the method can even work at all. Another crucial detail is that the experiments were done by a single person (me). To see results with more confidence, it is essential to test the method on multiple people with different sex, age and possibly brain structures. One other person took part in the experiment, but failed to fall asleep after trying for some time. This is understandable as the experiment requires the participants to have good quality sleep or use moderately strong sedatives in case of problematic sleep.</p>
+            <p>Separate research should be done to test this effect further using the developed method. Additionally, even more methods of measuring this effect should be developed to capture more aspects of this effect.</p>
 
 
         </article>
