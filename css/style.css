@@ -1,3 +1,7 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,20 +9,16 @@
 }
 
 html {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 body {
-  font-family: Verdana, sans-serif;
-  font-size: 0.88rem;
+  font-family: var(--system-ui);
+  font-size: 0.96rem;
   line-height: 1.2;
   min-height: 100%;
-  height: 100%;
-  background-color: rgba(190, 200, 225, 0.5);
-  background-image: url('../img/shading28_a50.png');
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background: rgb(214,228,247);
 }
 
 em {
@@ -28,16 +28,20 @@ em {
 
 main, header, footer {
   max-width: 890px;
-  margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 2.4em;
+  border-right:  1px solid #ddd;
+  /*border-left: 1.5em solid rgb(30, 48, 92);*/
 }
 
 header {
-  padding: 0.4em 1.3em;
+  padding: 0.4em 1.8em;
+  padding-left: 2.4em;
 }
 
 footer {
-  padding: 1.4em 1.3em 1em 1.3em;
+  padding: 1.4em 1.5em 1em 1.8em;
+  padding-left: 2.4em;
 }
 
 footer hr {
@@ -65,11 +69,12 @@ a {
 }
 
 hr {
-  opacity: 0.4;
+  opacity: 0.25;
 }
 
 main {
-  padding: 1em 1.3em;
+  padding: 1em 1.8em;
+  padding-left: 2.4em;
 }
 
 main section {
